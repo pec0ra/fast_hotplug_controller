@@ -6,10 +6,10 @@
 
 #define BUFFER_SIZE	128
 
-#define LOAD_COMMAND_1		"sudo adb shell \"su -c 'cat /sys/module/fast_hotplug/parameters/"
+#define LOAD_COMMAND_1		"adb shell \"su -c 'cat /sys/module/fast_hotplug/parameters/"
 #define LOAD_COMMAND_2		"'\" 2>&1"
 
-#define STORE_COMMAND_1		"sudo adb shell \"su -c 'echo "
+#define STORE_COMMAND_1		"adb shell \"su -c 'echo "
 #define STORE_COMMAND_2		" > /sys/module/fast_hotplug/parameters/"
 #define STORE_COMMAND_3		"'\""
 
